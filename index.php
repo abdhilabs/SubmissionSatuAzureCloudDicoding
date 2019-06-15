@@ -32,7 +32,7 @@
     $db = "submissionsatu";
 
     try {
-        $conn = new PDO("sqlsrv:server = tcp:submissionsatu.database.windows.net,1433; Database = DaftarPondok", "abdhi", "riza!?462199");
+        $conn = new PDO("sqlsrv:server = submissionsatu.database.windows.net; Database = DaftarPondok", "abdhi", "riza!?462199");
         $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
     } catch(Exception $e) {
         echo "Gagal: " . $e;
